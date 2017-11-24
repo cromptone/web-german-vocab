@@ -7,6 +7,8 @@ _To use_
 * Run ``npm run build``
 
 * Run ``npm run start`` for dev or ``npm run deploy`` for prod 
+
+A deployed version should be currently available at https://lucid-hawking-821378.netlify.com
 _______________________________
 
 
@@ -41,4 +43,4 @@ _How to add more vocabulary_
 
 __________________________________________________________
 Alexander Crompton, Berlin, Nov 2017 (alexcromp at gmail.com)
-A deployed version is currently available at https://lucid-hawking-821378.netlify.com
+
