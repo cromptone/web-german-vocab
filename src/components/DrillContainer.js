@@ -2,6 +2,7 @@ import React from 'react';
 import Input from './Input';
 import Button from './Button';
 import Subheading from './Subheading';
+import PropTypes from 'prop-types';
 
 export default class DrillContainer extends React.Component {
   constructor(props) {
@@ -85,14 +86,13 @@ export default class DrillContainer extends React.Component {
     if (this.props.drillType === 'withPrompts') {
       const nextPrompt = wordList[0][1];
       Object.assign(newState, { prompt: nextPrompt });
-    }		else {
+    } else {
       Object.assign(newState, { prompt: 'Enter German word:' });
     }
     this.setState(newState);
   }
 
   handleSeeAllAnswers() {
-    console.log(this.state.incorrectWords)
     const missedWords = this.state.wordsToComplete.slice();
     const incorrectWords = missedWords.concat(this.state.incorrectWords);
     const wordsAlreadyCompleted = missedWords.concat(this.state.wordsAlreadyCompleted);
@@ -124,34 +124,34 @@ export default class DrillContainer extends React.Component {
 
   render() {
     const boxedWordArrayOfRemaingVocab = this.state.wordsToComplete.map(wordPair => <BoxedWord key={wordPair} word={wordPair[1]} backgroundColor="#a2a2a2" opacity=".4" />);
-    const boxedWordArrayofCompletedVocab = this.state.wordsAlreadyCompleted.map(wordPair => <BoxedWord backgroundColor={this.state.incorrectWords.includes(wordPair) ? '#ffa2a2' : '#a2a2a2'} key={wordPair} word={`${wordPair[0]} → ${wordPair[1]}`} opacity=".7" />);
+    const boxedWordArrayofCompletedVocab = this.state.wordsAlreadyCompleted.map(wordPair => <BoxedWord backgroundColor={this.state.incorrectWords.includes(wordPair) ? '#ffa2a2' : '#a2a2a2'} key={wordPair} word={`${wordPair[0]} → ${wordPair[1]}`} opacity=".8" />);
 
     return (
       <div>
         <div style={{ clear: 'both' }}>
-          <div style={{marginRight: '12.5%', clear: 'both', float: 'right', padding: 10}}>
+          <div style={{ marginRight: '12.5%', clear: 'both', float: 'right', padding: 10 }}>
             {this.state.wordsToComplete.length > 0 &&
-            <Button id="showAnswers" clickHandler={this.handleSeeAllAnswers} text="See all answers" />
+              <Button id="showAnswers" clickHandler={this.handleSeeAllAnswers} text="See all answers" />
 						}
             <Button id="return" clickHandler={this.handleReturnToMenu} text="Return to menu" />
             <Button id="restart" clickHandler={this.handleRestart} text="Restart" />
 
           </div>
-            <div style={{ marginLeft: '12.5%' }} >
-              <Subheading prompt={this.state.prompt} />
-            </div>
-            {this.state.wordsToComplete.length > 0 &&
+          <div style={{ marginLeft: '12.5%' }} >
+            <Subheading prompt={this.state.prompt} />
+          </div>
+          {this.state.wordsToComplete.length > 0 &&
             <Input onSubmit={this.handleVocabSubmission} />
-            }
+          }
         </div>
         <div style={{ paddingLeft: '15%' }}>
           {this.state.wordsAlreadyCompleted && this.state.wordsAlreadyCompleted.length < 2 &&
-          <div style={{ margin: 'auto', width: '100%', float: 'left' }}>
-            <BoxedWord word="Enter the singular and plural, separated by a comma → das Beispiel, die Beispiele" backgroundColor="yellow" opacity=".4" />
-          </div>
+            <div style={{ margin: 'auto', width: '100%', float: 'left' }}>
+              <BoxedWord word="Enter the singular and plural, separated by a comma → das Beispiel, die Beispiele" backgroundColor="yellow" opacity=".6" />
+            </div>
 					}
           {this.props.drillType === 'withoutPrompts' &&
-          <BoxedWordContainer style={{ float: 'left', width: '35%' }} boxedWordArray={boxedWordArrayOfRemaingVocab} />
+            <BoxedWordContainer style={{ float: 'left', width: '35%' }} boxedWordArray={boxedWordArrayOfRemaingVocab} />
 					}
           <BoxedWordContainer style={{ width: '100%', marginRight: '5%' }} boxedWordArray={boxedWordArrayofCompletedVocab} />
         </div>
@@ -161,10 +161,11 @@ export default class DrillContainer extends React.Component {
 }
 
 const BoxedWord = ({ word, opacity, backgroundColor }) => (<div style={{
- backgroundColor, color: '#121224', opacity, margin: 3, float: 'left', borderRadius: 5, padding: '5px',
-}}
->{word}
-</div>);
+  backgroundColor, color: '#121224', opacity, margin: 3, float: 'left', borderRadius: 5, padding: '5px',}}>{word}</div>);
 const BoxedWordContainer = ({ boxedWordArray }) => <div style={{ float: 'left', width: '40%' }} >{boxedWordArray}</div>;
 
-
+DrillContainer.propTypes = {
+  vocabList: PropTypes.array.isRequired,
+  drillType: PropTypes.oneOf(['withPrompts', 'withoutPrompts']).isRequired,
+  handleReturnToMenu: PropTypes.func.isRequired
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import SetupOptions from './SetupOptions';
 import Button from './Button';
+import PropTypes from 'prop-types';
 
 export default class SetupOptionsContainer extends React.Component {
   constructor(props) {
@@ -21,7 +22,6 @@ export default class SetupOptionsContainer extends React.Component {
   handleDrillChoice(e) {
     this.setState({ chosenDrillId: e.target.id });
   }
-
 
   handleExerciseStart() {
     this.props.onOptionsSelected(
@@ -59,4 +59,10 @@ export default class SetupOptionsContainer extends React.Component {
 			</div>
 		);
 	}
+}
+
+SetupOptionsContainer.propTypes = {
+  drillTypeOptions: PropTypes.array.isRequired,
+  vocabListOptions: PropTypes.array.isRequired,
+  onOptionsSelected: PropTypes.func.isRequired,
 }

@@ -25,7 +25,7 @@ export default class Button extends React.Component {
 
     // Make button wiggle and lighten
     const tl = new TimelineLite();
-    tl.to(button, 0.3, { rotation: 10 })
+    tl.to(button, 0.1, { rotation: 2 })
     tl.to(button, 2, { rotation: 0, ease: Elastic.easeOut.config(0.9, 0.1) });
     var tl2 = new TimelineLite().to(button, 0.75, {
       backgroundColor: "#fafafa"
@@ -39,22 +39,22 @@ export default class Button extends React.Component {
       margin: 0,
       marginLeft: 10,
       marginBottom: 10,
-        backgroundColor: '#a2a2a2',
-        color: '#121224',
-        fontSize: 16,
-     };
+      backgroundColor: '#a2a2a2',
+      color: '#121224',
+      fontSize: 16,
+    };
 
-     if (this.props.sizeClass === 'big') {
-        Object.assign(style, {
-           fontSize: 30,
-               height: 70,
-           });
-       }
-       return (
-           <button
-               type="button"
-               id={this.props.id}
-               style={style}
+    if (this.props.sizeClass === 'big') {
+      Object.assign(style, {
+        fontSize: 30,
+        height: 70,
+      });
+    }
+    return (
+      <button
+        type="button"
+        id={this.props.id}
+        style={style}
         onClick={this.handleClick}
         ref={c => (this.button = c)}
       >
