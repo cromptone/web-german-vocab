@@ -4,6 +4,12 @@ _Introduction_
 
 * This is a personal vocabulary practice program I created to help me learn German vocabulary.
 
+Run ``npm install``
+
+Run ``npm run build``
+
+Run ``npm run start`` for dev or ``npm run deploy`` for prod 
+
 _Description of drills_
 
 * Word cloud: For a given vocab list, the user must write the German version perfectly for all the words in the list. The user can make errors without penalty.

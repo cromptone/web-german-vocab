@@ -4,7 +4,6 @@ import { TweenLite, TimelineLite } from 'gsap';
 import PropTypes from 'prop-types';
 
 export default class Button extends React.Component {
-  "use strict"
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
