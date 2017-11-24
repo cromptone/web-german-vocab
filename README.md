@@ -23,7 +23,7 @@ _Description of drills_
 * Word cloud: For a given vocab list, the user must write the German version perfectly for all the words in the list. The user can make errors without penalty.
 * With prompts: For a given vocab list, the user is prompted with an English word, and given one chance to write the German version.
 
-_Ideas for Improvement_
+_Ideas for improvement_
 * More vocabulary!
 * Allow users to choose to be drilled on fewer words (i.e., a subset) or more words (i.e., an intersection of several sets)
 * Put a button that allows users to continue being drilled on the vocabulary they previously missed
