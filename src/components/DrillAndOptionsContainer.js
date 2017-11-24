@@ -61,20 +61,28 @@ export default class DrillAndOptionsContainer extends React.Component {
   }
 
   getVocabListById(vocabListId) {
-    const list = '';
-    if (vocabListId === 'germanAnimals') {
-      return animals.split('\n').map(word => word.split('\t'));
-    } else if (vocabListId === 'germanDomesticItems') {
-      return domestic.split('\n').map(word => word.split('\t'));
-    } else if (vocabListId === 'germanFood') {
-      return food.split('\n').map(word => word.split('\t'));
-    } else if (vocabListId === 'germanGeography') {
-      return geography.split('\n').map(word => word.split('\t'));
-    } else if (vocabListId === 'germanMusic') {
-      return music.split('\n').map(word => word.split('\t'));
-    } else if (vocabListId === 'germanPlants') {
-      return plants.split('\n').map(word => word.split('\t'));
+    var vocabList=[];
+    switch (vocabListId) {
+      case 'germanAnimals':
+        vocabList = animals;
+        break;
+      case 'germanDomesticItems':
+        vocabList = domestic;
+        break;   
+      case 'germanGeography':
+        vocabList = geography;
+        break;   
+      case 'germanFood':
+        vocabList = food;
+        break;      
+      case 'germanMusic':
+        vocabList = music;
+        break;      
+      case 'germanPlants':
+        vocabList = plants;
+        break;
     }
+    return vocabList.split('\n').map(word => word.split('\t'));
   }
 }
 

@@ -5,7 +5,7 @@ das Blechinstrument, die Blechinstrumente	brass instrument
 das Cello, die Cellos	cello
 die Backe, die Backen	cheek
 die Klarinette, die Klarinetten	clarinet
-das Becken, die Becken (musical instrument)	cymbal
+das Becken, die Becken	cymbal
 der Kontrabass, die Kontrabässe	double bass
 die Trommel, die Trommeln	drum
 das Englischhorn, die Englischhörner	English horn
@@ -34,7 +34,7 @@ die Posaune, die Posaunen	trombone
 die Trompete, die Trompeten	trumpet
 die Tuba, die Tuben	tuba
 die Bratsche, die Bratschen	viola
-die Fiedel, die Fiedeln (dated, humorous)	fiddle
+die Fiedel, die Fiedeln	fiddle (dated, humorous)
 die Pfeife, die Pfeifen	whistle
 das Holzblasinstrument, die Holzblasinstrumente	woodwind instrument
 das Xylophon, die Xylophone	xylophone`;

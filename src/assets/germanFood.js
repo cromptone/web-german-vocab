@@ -19,7 +19,7 @@ der Käse, die Käse	cheese
 die Kirsche, die Kirschen	cherry
 das Porzellan, die Porzellane	china
 die Schokolade, die Schokoladen	chocolate
-der Mais, die Maise (and +n in dativ)	corn
+der Mais, die Maise	corn (and +n in dativ)
 die Frucht, die Früchte	fruit (including metaphorical fruit)
 das Obst	fruit (not Frucht)
 mit den Hühnern aufstehen	to get up with the chickens (at the crack of dawn)
@@ -43,7 +43,7 @@ das Mehl, die Mehle	flour
 die Nahrung, die Nahrungen 	food
 das Essen, die Essen	meal
 die Gabel, die Gabeln	fork
-das Glas, die Gläser (and +n in dativ)	glass (drinking)
+das Glas, die Gläser	glass (for drinking) (+n in dativ)
 die Traube, die Trauben	grape
 die Pampelmuse, die Pampelmusen	grapefruit
 die Reibe, die Reiben	grater
