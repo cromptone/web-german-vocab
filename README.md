@@ -1,14 +1,20 @@
 # web-german-vocab
 
+_To use_
+
+* Run ``npm install``
+
+* Run ``npm run build``
+
+* Run ``npm run start`` for dev or ``npm run deploy`` for prod 
+_______________________________
+
+
+
 _Introduction_
 
 * This is a personal vocabulary practice program I created to help me learn German vocabulary.
 
-Run ``npm install``
-
-Run ``npm run build``
-
-Run ``npm run start`` for dev or ``npm run deploy`` for prod 
 
 _Description of drills_
 
