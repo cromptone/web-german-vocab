@@ -8,7 +8,7 @@ _To use_
 
 * Run ``npm run start`` for dev
 
-A deployed version should be currently available at https://lucid-hawking-821378.netlify.com
+Demo: https://lucid-hawking-821378.netlify.com
 _______________________________
 
 
@@ -36,10 +36,10 @@ _How to add more vocabulary_
   * Each line is German first, then a tab delimiter, then the English translation.
   * Any explanation (e.g., n-declension, synonyms) goes with the English.
   * Conveniently, these two columns can be copy-pasted from an Excel spreadsheet and wrapped in backticks very easily
-* Now you need to modify /src/components/DrillAndOptionsContainer.js
+* Modify ``/src/components/DrillAndOptionsContainer.js``
   * Import the new constant at the top
-  * Update the vocabListOptions (``text`` is the user-facing name on the button, ``id`` is the list ID)
-  * Update the rawVocabListById object (the key is the id from vocabListOptions, the value is the imported constant)
+  * Update ``vocabListOptions`` (``text`` is the user-facing name on the button, ``id`` is the list ID)
+  * Update the ``rawVocabListById`` object (the key is the id from ``vocabListOptions``, the value is the imported constant)
 * That's it!
 
 __________________________________________________________
