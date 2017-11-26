@@ -31,14 +31,15 @@ _Ideas for improvement_
 
 _How to add more vocabulary_
 
-* Add a .js file to the /src/assets folder.
-* * Follow the existing templates of all the other files in the assets folder. Create and export a constant that's a big, long, multi-line string enclosed in back-ticks.
-* * German first, then a tab delimiter, then the English translation. Any explanation (e.g., n-declension) goes with the English.
-* * Conveniently, these two columns can be copy-pasted from an Excel spreadsheet and wrapped in backticks very easily
+* Add a .js file to the ``/src/assets`` folder.
+  * Follow the existing templates of all the other files in the assets folder. Create and export a constant that's a big, long, multi-line string enclosed in back-ticks.
+  * Each line is German first, then a tab delimiter, then the English translation.
+  * Any explanation (e.g., n-declension, synonyms) goes with the English.
+  * Conveniently, these two columns can be copy-pasted from an Excel spreadsheet and wrapped in backticks very easily
 * Now you need to modify /src/components/DrillAndOptionsContainer.js
-* * Import the new file at the topt
-* * Update the vocabListOptions (``text`` is the user-facing name on the button, ``id`` is the list ID)
-* * Update the rawVocabListById object (the key is the id from vocabListOptions, the value is the imported constant)
+  * Import the new constant at the top
+  * Update the vocabListOptions (``text`` is the user-facing name on the button, ``id`` is the list ID)
+  * Update the rawVocabListById object (the key is the id from vocabListOptions, the value is the imported constant)
 * That's it!
 
 __________________________________________________________
