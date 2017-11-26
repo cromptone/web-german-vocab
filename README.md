@@ -15,7 +15,7 @@ _______________________________
 
 _Introduction_
 
-* This is a personal vocabulary practice program I created to help me learn German vocabulary.
+* This is a program I created to help learn German vocabulary.
 
 
 _Description of drills_
