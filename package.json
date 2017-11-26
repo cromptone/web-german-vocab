@@ -6,7 +6,6 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "author": "Alexander Crompton",
   "license": "ISC",
