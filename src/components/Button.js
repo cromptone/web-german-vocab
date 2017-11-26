@@ -19,7 +19,6 @@ export default class Button extends React.Component {
   }
 
   handleClick(e) {
-    e.preventDefault();
     const button = e.currentTarget;
     this.props.clickHandler(e);
 

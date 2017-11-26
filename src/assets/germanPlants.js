@@ -1,45 +1,44 @@
 export const plants = `die Eichel, die Eicheln	acorn
+die Borke, die Borken	bark (tree bark)
+der Gürtel, die Gürtel	belt
+der Strauß, die Sträuße	bouquet
+der Busch, die Büsche	bush (leafier/greener, as opposed to flowery)
 der Kaktus, die Kaktusse	cactus
+die Nelke, die Nelken	carnation
+die Narzisse, die Narzissen	daffodil
+das Gänseblümchen, die Gänseblümchen	daisy
 das Farn, die Farne	fern
+die Blume, die Blumen	flower
 der Wald, die Wälder	forest
+das Gras, die Gräser	grass (and +n for dativ)
+der Boden, die Böden	ground (or soil, or floor)
+die Ernte, die Ernten	harvest
+das Heu	hay
+die Hacke, die Hacken	hoe
 die Stechpalme, die Stechpalmen	holly
+das Hufeisen, die Hufeisen	horseshoe
+die Schwertlilie, die Schwertlilien	iris
 der Efeu	ivy
+das Blatt, die Blätter	leaf
 die Lilie, die Lilien	lily
 der Holzklotz, die Holzklötze	log
 der Ahorn, die Ahorne	maple
-die Palme, die Palmen	palm tree
 die Handfläche, die Handflächen	palm
-der Seetang, die Seetange	seaweed
-der Baum, die Bäume	tree
-das Holz, die Hölzer	wood
-die Borke, die Borken	bark (tree bark)
-die Wurzel, die Wurzeln	root
-die Ernte, die Ernten	harvest
-das Heu	hay
-das Gras, die Gräser (and +n for dativ)	grass
-das Unkraut, die Unkräuter (and +n for dativ)	weed (unwanted plant)
-die Hacke, die Hacken	hoe
-das Hufeisen, die Hufeisen	horseshoe
-das Lasso, die Lassos	lasso
+die Palme, die Palmen	palm tree
 die Pflanze, die Pflanzen	plant
-die Scheuche, die Scheuchen	scarecrow
-die Schaufel, die Schaufeln	shovel
-der Boden, die Böden	ground (or soil, or floor)
-der Traktor, die Traktor	tractor
-das Gemüse, die Gemüse	vegetable
-der Kragen, die Kragen	collar 
-das Joch, die Joche	yoke
-der Gürtel, die Gürtel	belt
-der Strauß, die Sträuße	bouquet
-die Narzisse, die Narzissen	daffodil
-das Blatt, die Blätter	leaf
-der Busch, die Büsche	bush (leafier/greener, as opposed to flowery)
-der Strauch, die Sträucher	shrub (more flowery than a bush)
-das Gänseblümchen, die Gänseblümchen	daisy
-die Blume, die Blumen	flower
+die Wurzel, die Wurzeln	root
 die Rose, die Rosen	rose
-die Schwertlilie, die Schwertlilien	iris
-die Nelke, die Nelken	carnation
+die Scheuche, die Scheuchen	scarecrow
+der Seetang, die Seetange	seaweed
+die Schaufel, die Schaufeln	shovel
+der Strauch, die Sträucher	shrub (more flowery than a bush)
 die Sonnenblume, die Sonnenblumen	sunflower
+der Traktor, die Traktor	tractor
+der Baum, die Bäume	tree
+der Baumstamm, die Baumstämme	tree trunk
 die Tulpe, die Tulpen	tulip
-die Gießkanne, die Gießkannen	watering pot`;
+das Reis, die Reiser	twig
+das Gemüse, die Gemüse	vegetable
+die Gießkanne, die Gießkannen	watering pot
+das Unkraut, die Unkräuter	weed (unwanted plant. Adds +n in the dativ)
+das Holz, die Hölzer	wood`;
