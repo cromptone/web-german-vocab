@@ -39,34 +39,40 @@ export default class DrillContainer extends React.Component {
 
   handleVocabSubmissionWithoutPrompts(response, answerIndex) {
     if (answerIndex === -1) { // Wrong answer!
-
-
+      return;
     } else {
       this.updateStateAfterAnswer(answerIndex, true);
     }
   }
 
   updateStateAfterAnswer(answerIndex, isAnswerCorrect) {
-    const newState = ({});
+    const newState = {};
     const updatedWordsToComplete = this.state.wordsToComplete.filter((wordPair, index) => index !== answerIndex);
     const completedWords = this.state.wordsAlreadyCompleted.slice();
     if (isAnswerCorrect) {
       const answer = this.state.wordsToComplete.slice(answerIndex, answerIndex + 1);
       completedWords.unshift(answer[0]);
-    } else { // We know this is always a "withProps" drill
+    } else { // We know this is always a "withPrompts" drill
       updatedWordsToComplete.shift();
       const incorrectWords = this.state.incorrectWords.slice();
       incorrectWords.unshift(this.state.wordsToComplete[0]);
       completedWords.unshift(this.state.wordsToComplete[0]);
       Object.assign(newState, { incorrectWords });
     }
+
     if (this.props.drillType === 'withPrompts') {
       let nextPrompt = ' ';
       if (this.state.wordsToComplete.length > 1) {
         nextPrompt = this.state.wordsToComplete[1][1];
       }
       Object.assign(newState, { prompt: nextPrompt });
+    } else {
+      if (this.state.wordsToComplete.length === 1) {
+        Object.assign(newState, { prompt: ' ' })
+      }
     }
+
+
     Object.assign(newState, {
       wordsToComplete: updatedWordsToComplete,
       wordsAlreadyCompleted: completedWords,

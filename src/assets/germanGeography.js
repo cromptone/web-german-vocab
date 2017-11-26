@@ -1,48 +1,47 @@
-export const geography = `die Arktis	the Arctic
-das Nordpolarmeer	Arctic Ocean
+export const geography = `Afrika	Africa
 Antarktika	Antarctica
-Afrika	Africa
-Atlantischer Ozean	Atlantic Ocean
-die Höhle, die Höhlen	cave
-der Bruch, die Brüche	break (or fracture)
-die Pause, die Pausen	break (or pause)
-China	China
+arktisch	arctic
+das Nordpolarmeer	Arctic Ocean
 Asien	Asia
+Atlantischer Ozean	Atlantic Ocean
+der Bach, die Bäche	brook (stream)
+die Höhle, die Höhlen	cave
+China	China
 die Bussole, die Bussolen	compass (for orienting yourself)
+der Kegel, die Kegel	cone
+das Kreuz, die Kreuze	cross
+der Damm, die Dämme	dam
+die Wüste, die Wüsten	desert
+der Deich, die Deiche	dike
+die Dürre, die Dürren	drought
+das Erdbeben, die Erdbeben	earthquake
 der Äquator, die Äquatoren	equator
 Europa	Europe
-die Erdkunde	geography (as a school subject)
+die Flut, die Fluten	flood
+die Überschwemmung, die Überschwemmungen	flooding
 die Geografie, die Geografien	geography (as a field of study)
+die Erdkunde	geography (as a school subject)
 der Globus, der Globen	globe
-der Kegel, die Kegel	cone
-die Pyramide, die Pyramiden	pyramid
+die Halbkugel, die Halbkugeln	hemisphere
 der Eisberg, die Eisberge	iceberg
 Indischer Ozean	Indian Ocean
-das Kreuz, die Kreuze	cross
 die Insel, die Inseln	island
 Japan	Japan
 der Dschungel, die Dschungel	jungle
-der Regenwald, die Regenwälder	rainforest
+das Bergwerk, die Bergwerke	mine (underground)
 das Mineral, die Minerale	mineral
 der Bergbau	mining
-die Grube, die Gruben	pit (hole in the ground)
-das Bergwerk, die Bergwerke	mine (underground)
-der Bach, die Bäche	brook (stream)
 der Norden	north (noun)
-die Halbkugel, die Halbkugeln	hemisphere
 Pazifischer Ozean	Pacific Ocean
+die Grube, die Gruben	pit (hole in the ground)
+die Pyramide, die Pyramiden	pyramid
+der Regenwald, die Regenwälder	rainforest
 der Süden	south (noun)
 der Südpol	South Pole
-die Vereinigten Staaten	United States
-der Westen	west (noun)
-das Tal, die Täler	valley
 der Sumpf, die Sümpfe	swamp
-die Flut, die Fluten	flood
-die Überschwemmung, die Überschwemmungen	flooding
-der Deich, die Deiche	dike
-der Damm, die Dämme	dam
-die Wüste, die Wüsten	desert
-die Dürre, die Dürren	drought
+die Arktis	the Arctic
 der Tornado, die Tornados	tornado
-das Erdbeben, die Erdbeben	earthquake
-der Vulkan, die Vulkane	volcano`;
+die Vereinigten Staaten	United States
+das Tal, die Täler	valley
+der Vulkan, die Vulkane	volcano
+der Westen	west (noun)`;

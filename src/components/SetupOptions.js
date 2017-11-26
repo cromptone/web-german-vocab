@@ -37,7 +37,7 @@ export default class SetupOptions extends React.Component {
           chosen={Boolean(option.id === this.props.chosenId)}
           sizeClass='big'
           id={option.id}
-          key={option.listKey}
+          key={option.id}
           text={option.text}
           clickHandler={this.handleClick}
         />
