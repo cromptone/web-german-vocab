@@ -6,7 +6,7 @@ _To use_
 
 * Run ``npm run build``
 
-* Run ``npm run start`` for dev or ``npm run deploy`` for prod 
+* Run ``npm run start`` for dev
 
 A deployed version should be currently available at https://lucid-hawking-821378.netlify.com
 _______________________________
@@ -32,13 +32,13 @@ _Ideas for improvement_
 _How to add more vocabulary_
 
 * Add a .js file to the /src/assets folder.
-* * Follow the existing templates of all the other files in the assets folder
-* * German first, then a tab delimiter, then the English translation. Any explanation goes with the English: create a constant German first, then a tab delimiter, then the English translation.
+* * Follow the existing templates of all the other files in the assets folder. Create and export a constant that's a big, long, multi-line string enclosed in back-ticks.
+* * German first, then a tab delimiter, then the English translation. Any explanation (e.g., n-declension) goes with the English.
 * * Conveniently, these two columns can be copy-pasted from an Excel spreadsheet and wrapped in backticks very easily
 * Now you need to modify /src/components/DrillAndOptionsContainer.js
-* * Import the new file at the top
-* * Update the vocabListOptions, following the pattern
-* * Update the getVocabListById function with another "else if" 
+* * Import the new file at the topt
+* * Update the vocabListOptions (``text`` is the user-facing name on the button, ``id`` is the list ID)
+* * Update the rawVocabListById object (the key is the id from vocabListOptions, the value is the imported constant)
 * That's it!
 
 __________________________________________________________
