@@ -1,16 +1,23 @@
 import React from 'react';
 
 export default function Heading(props) {
-  const style = {
-    color: "#a2a2a2",
-    fontSize: 50,
-    fontFamily: "sans-serif",
-    clear: "both",
-    textAlign: "center",
-    height: 100,
-    opacity: .8,
-    margin: "0 auto"
-  }
+    const style = {
+        backgroundColor: "#121224",
+        color: "#888888",
+        fontSize: 15,
+        fontFamily: "sans-serif",
+        display: "flex",
+        height: 15,
+        margin: "0 auto 0 auto",
+        position: "fixed",
+        left: 0,
+        top: 0,
+        width: "100%",
+        boxShadow: "0px 3px 9px #000000",
+        bottomMargin: 80,
+        padding: "5px 10px",
+        zIndex: 10
+    };
 
-  return <div style={style}>{props.text}</div>
-}
+    return <div style={style}><em>{props.text}</em></div>;
+};

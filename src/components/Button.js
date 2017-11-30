@@ -9,26 +9,24 @@ export default class Button extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidUpdate(prevProps) {
-    // Return not-chosen buttons to their previous state
-    if (prevProps !== this.props && !this.props.chosen) {
-      TweenLite.to(this.button, 0.75, {
-        backgroundColor: '#a2a2a2',
-      });
-    }
+  shouldComponentUpdate(nextProps) {
+    return (nextProps.chosen !== this.props.chosen)
   }
 
-  handleClick(e) {
-    const button = e.currentTarget;
-    this.props.clickHandler(e);
+  componentDidUpdate(prevProps) {
+    // Return not-chosen buttons to their previous state
+    if ((prevProps !== this.props) && !this.props.chosen) {
+      TweenLite.to(this.button, 0.75, {
+        backgroundColor: '#a2a2a2',
+        boxShadow: "3px 3px 2px #525252"
 
-    // Make button wiggle and lighten
-    const tl = new TimelineLite();
-    tl.to(button, 0.1, { rotation: 2 })
-    tl.to(button, 2, { rotation: 0, ease: Elastic.easeOut.config(0.9, 0.1) });
-    var tl2 = new TimelineLite().to(button, 0.75, {
-      backgroundColor: "#fafafa"
-    });
+      });
+    }
+  } 
+
+  handleClick(e) {
+    this.animateClickedButton(e.currentTarget);
+    this.props.clickHandler(e);
   }
 
   render() {
@@ -41,12 +39,13 @@ export default class Button extends React.Component {
       backgroundColor: '#a2a2a2',
       color: '#121224',
       fontSize: 16,
+      boxShadow: "3px 3px 2px #525252"
     };
 
     if (this.props.sizeClass === 'big') {
       Object.assign(style, {
-        fontSize: 30,
-        height: 70,
+        fontSize: 20,
+        height: 40,
       });
     }
     return (
@@ -56,16 +55,37 @@ export default class Button extends React.Component {
         style={style}
         onClick={this.handleClick}
         ref={c => (this.button = c)}
+        autoFocus={this.props.focus}
       >
         {this.props.text}
       </button>
     );
   }
+
+  animateClickedButton(button) {
+    const wiggleAnimation = new TimelineLite();
+    wiggleAnimation.to(button, 0.1, { rotation: 2 })
+    wiggleAnimation.to(button, 2, { rotation: 0, ease: Elastic.easeOut.config(0.9, 0.1) });
+    var colorChangeAnimation = new TimelineLite().to(button, 0.75, {
+      backgroundColor: "#fafafa",
+      boxShadow: "3px 3px 6px #a2a2a2"
+    });
+    if (this.props.autoRevertColorChange) {
+      colorChangeAnimation.reverse(0);
+    }
+  }
+
 }
 
 Button.propTypes = {
   chosen: PropTypes.bool,
   sizeClass: PropTypes.string,
   clickHandler: PropTypes.func.isRequired,
+  autofocus: PropTypes.bool,
+  autoRevertColorChange: PropTypes.bool
 };
 
+Button.defaultProps = {
+  focus: false,
+  autoRevertColorChange: false
+};

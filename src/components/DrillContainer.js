@@ -20,6 +20,7 @@ export default class DrillContainer extends React.Component {
       incorrectWords: [],
       prompt,
     };
+    window.scroll(0,0);
   }
 
   handleVocabSubmission(response) {
@@ -140,7 +141,7 @@ export default class DrillContainer extends React.Component {
               <Button id="showAnswers" clickHandler={this.handleSeeAllAnswers} text="See all answers" />
 						}
             <Button id="return" clickHandler={this.handleReturnToMenu} text="Return to menu" />
-            <Button id="restart" clickHandler={this.handleRestart} text="Restart" />
+            <Button id="restart" clickHandler={this.handleRestart} text="Restart" autoRevertColorChange={true} />
 
           </div>
           <div style={{ marginLeft: '12.5%' }} >

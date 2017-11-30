@@ -24,7 +24,7 @@ der Aufschalg, die Aufschläge	percussion
 das Schalginstrument, die Schlaginstrumente	percussion instrument
 das Instrument, die Instrumente	instrument (musical)
 das Klavier, die Klaviere	piano
-die Piccoloflöte,die Piccoloflöten	piccolo
+die Piccoloflöte, die Piccoloflöten	piccolo
 das Saxophon, die Saxophone	saxophone
 das Streichinstrument, die Streichinstrumente	string instrument (used with bow)
 das Saiteninstrument, die Saiteninstrumente	string instrument (not necessarily with bows)
