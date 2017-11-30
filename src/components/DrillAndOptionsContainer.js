@@ -148,6 +148,7 @@ const rawVocabListById = {
   'germanIndustry': farmIndustry,
   'germanColor': color,
   'germanGrabbag': grabbag
+
  }
 
 const drillTypeOptions = [
