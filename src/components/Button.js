@@ -16,11 +16,7 @@ export default class Button extends React.Component {
   componentDidUpdate(prevProps) {
     // Return not-chosen buttons to their previous state
     if ((prevProps !== this.props) && !this.props.chosen) {
-      TweenLite.to(this.button, 0.75, {
-        backgroundColor: '#a2a2a2',
-        boxShadow: "3px 3px 2px #525252"
-
-      });
+      TweenLite.to(this.button, 0.75, { backgroundColor: '#a2a2a2' });
     }
   } 
 
@@ -68,7 +64,6 @@ export default class Button extends React.Component {
     wiggleAnimation.to(button, 2, { rotation: 0, ease: Elastic.easeOut.config(0.9, 0.1) });
     var colorChangeAnimation = new TimelineLite().to(button, 0.75, {
       backgroundColor: "#fafafa",
-      boxShadow: "3px 3px 6px #a2a2a2"
     });
     if (this.props.autoRevertColorChange) {
       colorChangeAnimation.reverse(0);
