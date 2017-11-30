@@ -8,19 +8,19 @@ export default class SetupOptions extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      chosenOptionId: ''
-    }
+  }
+
+  shouldComponentUpdate(prevProps) {
+    return (prevProps.chosenId !== this.props.chosenId);
   }
 
   handleClick(e) {
-    this.setState({ chosenOptionId: e.target.id });
+    this.setState({ currentChoice: e.target.id });
     this.props.onChoiceClicked(e);
   }
 
   render() {
     const optionButtonList = this.createButtonListFromOptions(this.props.options)
-
     return (
       <div>
         <Subheading prompt={this.props.optionPrompt} />
@@ -32,7 +32,7 @@ export default class SetupOptions extends React.Component {
   createButtonListFromOptions(options) {
     if (options.length < 1) { return }
     return options.map(option => {
-      return (
+      return (        
         <Button
           chosen={Boolean(option.id === this.props.chosenId)}
           sizeClass='big'

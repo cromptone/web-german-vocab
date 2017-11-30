@@ -1,5 +1,4 @@
 .DS_STORE
-.eslintrc.js
 node_modules
 transformed.js
 bundle.js

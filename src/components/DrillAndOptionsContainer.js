@@ -44,9 +44,8 @@ export default class DrillAndOptionsContainer extends React.Component {
     this.handleOptionsSelected = this.handleOptionsSelected.bind(this);
   }
 
-  handleOptionsSelected(chosenDrillId, chosenVocabListId) {
+  handleOptionsSelected(chosenVocabListId, chosenDrillId) {
     const chosenVocabList = this.getVocabListById(chosenVocabListId);
-    console.log();
     this.setState({
       showOptions: false,
       showDrills: true,
@@ -60,10 +59,6 @@ export default class DrillAndOptionsContainer extends React.Component {
       showOptions: true,
       showDrills: false,
     });
-  }
-
-  componentWillMount() {
-
   }
 
   render() {
@@ -121,7 +116,7 @@ const vocabListOptions = [
   {  text: 'Sport and sports', id: 'germanSport'},
   {  text: 'Farming and industry', id: 'germanIndustry'},
   {  text: 'Colors', id: 'germanColor'},
-  {  text: 'Grab-bag!', id: 'germanGrabbag' },
+  {  text: 'Grab-bag!', id: 'germanGrabbag' }
  ];
 
 const rawVocabListById = {
@@ -152,7 +147,8 @@ const rawVocabListById = {
   'germanSport': sport,
   'germanIndustry': farmIndustry,
   'germanColor': color,
-  'germanGrabbag': grabbag,
+  'germanGrabbag': grabbag
+
  }
 
 const drillTypeOptions = [
