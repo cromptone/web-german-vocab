@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Heading(props) {
     const style = {
-        backgroundColor: "#121224",
-        color: "#888888",
+        color: "#121224",
+        backgroundColor: "#888888",
         fontSize: 15,
         fontFamily: "sans-serif",
         display: "flex",

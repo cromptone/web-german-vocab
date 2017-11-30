@@ -1,8 +1,8 @@
 import React from 'react';
-import Input from './Input';
 import Button from './Button';
-import Subheading from './Subheading';
 import PropTypes from 'prop-types';
+import BoxedWords from './BoxedWords';
+import InputContainer from './InputContainer';
 
 export default class DrillContainer extends React.Component {
   constructor(props) {
@@ -130,9 +130,6 @@ export default class DrillContainer extends React.Component {
   }
 
   render() {
-    const boxedWordArrayOfRemaingVocab = this.state.wordsToComplete.map(wordPair => <BoxedWord key={wordPair} word={wordPair[1]} backgroundColor="#a2a2a2" opacity=".4" />);
-    const boxedWordArrayofCompletedVocab = this.state.wordsAlreadyCompleted.map(wordPair => <BoxedWord backgroundColor={this.state.incorrectWords.includes(wordPair) ? '#ffa2a2' : '#a2a2a2'} key={wordPair} word={`${wordPair[0]} → ${wordPair[1]}`} opacity=".8" />);
-
     return (
       <div>
         <div style={{ clear: 'both' }}>
@@ -144,32 +141,24 @@ export default class DrillContainer extends React.Component {
             <Button id="restart" clickHandler={this.handleRestart} text="Restart" autoRevertColorChange={true} />
 
           </div>
-          <div style={{ marginLeft: '12.5%' }} >
-            <Subheading prompt={this.state.prompt} />
-          </div>
-          {this.state.wordsToComplete.length > 0 &&
-            <Input onSubmit={this.handleVocabSubmission} />
-          }
+        <InputContainer 
+          showInputBar={this.state.wordsToComplete.length > 0} 
+          handleVocabSubmission={this.handleVocabSubmission} 
+          prompt={this.state.prompt} 
+        />
         </div>
         <div style={{ paddingLeft: '15%' }}>
-          {this.state.wordsAlreadyCompleted && this.state.wordsAlreadyCompleted.length < 2 &&
-            <div style={{ margin: 'auto', width: '100%', float: 'left' }}>
-              <BoxedWord word="Enter the singular and plural, separated by a comma → das Beispiel, die Beispiele" backgroundColor="yellow" opacity=".6" />
-            </div>
-					}
-          {this.props.drillType === 'withoutPrompts' &&
-            <BoxedWordContainer style={{ float: 'left', width: '35%' }} boxedWordArray={boxedWordArrayOfRemaingVocab} />
-					}
-          <BoxedWordContainer style={{ width: '100%', marginRight: '5%' }} boxedWordArray={boxedWordArrayofCompletedVocab} />
+          <BoxedWords 
+            drillType={this.props.drillType} 
+            wordsAlreadyCompleted={this.state.wordsAlreadyCompleted} 
+            incorrectWords={this.state.incorrectWords}
+            wordsToComplete={this.state.wordsToComplete}
+          />
         </div>
       </div>
     );
   }
 }
-
-const BoxedWord = ({ word, opacity, backgroundColor }) => (<div style={{
-  backgroundColor, color: '#121224', opacity, margin: 3, float: 'left', borderRadius: 5, padding: '5px',}}>{word}</div>);
-const BoxedWordContainer = ({ boxedWordArray }) => <div style={{ float: 'left', width: '40%' }} >{boxedWordArray}</div>;
 
 DrillContainer.propTypes = {
   vocabList: PropTypes.array.isRequired,
