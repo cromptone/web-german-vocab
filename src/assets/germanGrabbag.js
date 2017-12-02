@@ -116,4 +116,30 @@ die Kurve, die Kurven	bend (curve)
 die Fernsehserie, die Fernsehserien	television series
 die Fernsehsendung, die Fernsehsendungen	television show
 das Gemälde, die Gemälde	painting
-die Kunst, die Künste	art`;
+die Kunst, die Künste	art
+das Abwasser, die Abwässer	sewage water
+das Abenteuer, die Abenteuer	adventure
+der Eiskratzer, die Eiskratzer	ice scraper
+die Lahnung, die Lahnungen	breakwater
+die Seebrücke die Seebrücken	pier
+der Absatz, die Absätze	paragraph (also the heel of a shoe)
+der Abschluss, die Abschlüsse	close, completion, conclusion, ending
+der Schnitt, die Schnitte	cut, profile, intersection, incision, model, pattern
+der Abschnitt, die Abschnitte	section, phase, segment
+die Absprache, die Absprachen	agreement (more like a gentlemen’s agreement), arrangement
+die Einigung, die Einigungen	agreement, settlement, understanding
+der Teilnehmer, die Teilnehmer	participant (male)
+die Teilnehmerin, die Teilnehmerinnen	participant (female)
+die Abteilung, die Abteilungen	department, division, bureau
+das Abplatzen	flaking, peeling, chipping (like paint)
+die Diskrepanz, die Diskrepanzen	discrepancy
+die Abweichung, die Abweichungen	deviation, aberration, variation, divergence, discrepancy
+die Weiche, die Weichen	railroad switch
+das Weichtier, die Weichtiere	mollusk
+der Weichspüler, die Weichspüler	fabric softener
+weich	soft, weak, creamy, flexible, mellow
+die Alliierten	the Allies (in WW2)
+die Alufolie, die Alofolien	aluminum foil
+die Ankunft, die Ankünfte	arrival
+der Empfang, die Empfänge	welcome, reception
+die Amtssprache, die Amtssprachen	official language`;

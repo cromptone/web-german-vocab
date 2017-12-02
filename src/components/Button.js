@@ -61,9 +61,7 @@ export default class Button extends React.Component {
     const wiggleAnimation = new TimelineLite();
     wiggleAnimation.to(button, 0.1, { rotation: 2 })
     wiggleAnimation.to(button, 2, { rotation: 0, ease: Elastic.easeOut.config(0.9, 0.1) });
-    var colorChangeAnimation = new TimelineLite().to(button, 0.75, {
-      backgroundColor: "#fafafa",
-    });
+    var colorChangeAnimation = new TimelineLite().to(button, 0.75, { backgroundColor: "#fafafa" });
     if (this.props.autoRevertColorChange) {
       colorChangeAnimation.reverse(0);
     }

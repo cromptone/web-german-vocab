@@ -29,6 +29,7 @@ import { sport } from '../assets/germanSport';
 import { farmIndustry } from '../assets/germanIndustry';
 import { color } from '../assets/germanColor';
 import { grabbag } from '../assets/germanGrabbag';
+import { zauber1 } from '../assets/germanZauberbergCh1';
 
 
 export default class DrillAndOptionsContainer extends React.Component {
@@ -116,7 +117,8 @@ const vocabListOptions = [
   {  text: 'Sport and sports', id: 'germanSport'},
   {  text: 'Farming and industry', id: 'germanIndustry'},
   {  text: 'Colors', id: 'germanColor'},
-  {  text: 'Grab-bag!', id: 'germanGrabbag' }
+  {  text: 'Grab-bag!', id: 'germanGrabbag' },
+  {  text: 'Der Zauberberg (chapter 1)', id: 'germanZauberbergCh1' }
  ];
 
 const rawVocabListById = {
@@ -147,7 +149,8 @@ const rawVocabListById = {
   'germanSport': sport,
   'germanIndustry': farmIndustry,
   'germanColor': color,
-  'germanGrabbag': grabbag
+  'germanGrabbag': grabbag,
+  'germanZauberbergCh1': zauber1,
 
  }
 
