@@ -12,6 +12,8 @@ export default class DrillContainer extends React.Component {
     this.handleSeeAllAnswers = this.handleSeeAllAnswers.bind(this);
     this.handleRestart = this.handleRestart.bind(this);
     this.handleRestartWithMissed = this.handleRestartWithMissed.bind(this);
+
+    const wordsToComplete = this.shuffleCopyOfArray(this.props.vocabList);
     
     const prompt = (this.props.drillType === 'withPrompts') ? wordsToComplete[0][1] : 'Enter German word:';
     this.state = {
