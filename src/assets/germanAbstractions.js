@@ -5,7 +5,7 @@ der Rat, die Räte	advice, suggestion
 das Alter, die Alter	age
 der Abgleich, die Abgleiche	comparison (as in checking to see if records align correctly, or if two things are square)
 der Vergleich, die Vergleiche	comparison (as in making an analogy)
-das Vertrauer	confidence
+das Vertrauen	confidence
 das Verbrechen, die Verbrechen	crime
 die Krise, die Krisen	crisis
 die Dunkelheit, die Dunkelheiten	darkness
