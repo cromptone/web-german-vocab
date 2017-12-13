@@ -27,13 +27,13 @@ der Tiefkühlschrank, die Tiefkühlschränke	freezer (ice-box)
 der Kühlschrank, die Kühlschränke	fridge
 die Möbel	furniture
 der Garten, die Gärten	garden
-das Glas, die Gläser (and +n in dativ)	glass (drinking)
+das Glas, die Gläser	glass (drinking. takes +n in dativ)
 der Leim, die Leime	glue
 die Reibe, die Reiben	grater
 die Hängematte, die Hängematten	hammock
 der Bügel, die Bügel	hanger
 das Bügeleisen, die Bügeleisen	iron (for clothing)
-der Kessel, die Kessel	kettle
+der Kessel, die Kessel	cauldron
 die Küche, die Küchen	kitchen
 das Messer, die Messer	knife
 der Schöpfer, die Schöpfer	ladle
@@ -63,11 +63,11 @@ die Fernbedienung, die Fernbedienungen	remote control
 das Nudelholz, die Nudelhölzer	rolling pin
 das Dach, die Dächer	roof
 das Zimmer, die Zimmer	room
-der Salztreuer, die Salztreuer	saltshaker
+der Salzstreuer, die Salzstreuer	saltshaker
 die Schere, die Scheren	scissors
 das Regal, die Regale	shelf
 das Sofa, die Sofas	sofa
-die Kelle, die Kellen	spatula
+der Teigschaber, die Teigschaber	spatula
 der Löffel, die Löffel	spoon
 der Hocker, die Hocker	stool
 der Herd, die Herde	stove
@@ -86,7 +86,7 @@ die Mauer, die Mauern	wall
 der Kleiderschrank, die Kleiderschränke	wardrobe (clothing cupboard)
 die Garderobe, die Garderoben	wardrobe (like French word)
 der Abfallkorb, die Abfallkörbe	wastebasket
-der Schneebesen, die Schneebesen 	whisk
+der Schneebesen, die Schneebesen	whisk
 das Fenster, die Fenster	window
 die Tasse, die Tassen	cup
 das Porzellan, die Porzellane	china

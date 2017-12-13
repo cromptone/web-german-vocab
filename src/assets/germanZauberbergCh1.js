@@ -1,5 +1,4 @@
-export const zauber1 = `	
-die Woche, die Wochen	week
+export const zauber1 = `die Woche, die Wochen	week
 jede Woche	every week
 zweimal in der Woche	twice weekly
 der Hochsommer, die Hochsommer	midsummer
