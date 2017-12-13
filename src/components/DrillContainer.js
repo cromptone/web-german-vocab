@@ -11,8 +11,8 @@ export default class DrillContainer extends React.Component {
     this.handleReturnToMenu = this.handleReturnToMenu.bind(this);
     this.handleSeeAllAnswers = this.handleSeeAllAnswers.bind(this);
     this.handleRestart = this.handleRestart.bind(this);
-
-    const wordsToComplete = this.shuffleCopyOfArray(this.props.vocabList);
+    this.handleRestartWithMissed = this.handleRestartWithMissed.bind(this);
+    
     const prompt = (this.props.drillType === 'withPrompts') ? wordsToComplete[0][1] : 'Enter German word:';
     this.state = {
       wordsToComplete,
@@ -80,9 +80,18 @@ export default class DrillContainer extends React.Component {
     this.setState(newState);
   }
 
+  handleRestartWithMissed() {
+    const wordList = this.state.wordsToComplete.concat(this.state.incorrectWords)
+    this.restart(wordList);
+  }
+
   handleRestart() {
-    const unshuffledWordList = this.state.wordsToComplete.concat(this.state.wordsAlreadyCompleted);
-    const wordList = this.shuffleCopyOfArray(unshuffledWordList);
+    const wordList = this.state.wordsToComplete.concat(this.state.wordsAlreadyCompleted);
+    this.restart(wordList)
+  }
+
+  restart(wordList) {   
+    wordList = this.shuffleCopyOfArray(wordList) 
     const newState = {
       wordsToComplete: wordList,
       wordsAlreadyCompleted: [],
@@ -134,7 +143,10 @@ export default class DrillContainer extends React.Component {
           <div style={{ marginRight: '12.5%', clear: 'both', float: 'right', padding: 10 }}>
             {this.state.wordsToComplete.length > 0 &&
               <Button id="showAnswers" clickHandler={this.handleSeeAllAnswers} text="See all answers" />
-						} 
+            }
+            {(this.state.incorrectWords.length > 0 || this.state.wordsToComplete.length > 0) &&
+              <Button id="restartWithMissed" clickHandler={this.handleRestartWithMissed} text="Redo with missed words" autoRevertColorChange={true} />
+            }  
             <Button id="return" clickHandler={this.handleReturnToMenu} text="Return to menu" />
             <Button id="restart" clickHandler={this.handleRestart} text="Restart" autoRevertColorChange={true} />
 
