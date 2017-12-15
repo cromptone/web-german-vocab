@@ -16,6 +16,7 @@ der Markt, die Märkte	market
 der Berg, die Berge	mountain
 der Schlamm, die Schlämme	mud
 das Museum, die Museen	museum
+die Mauer, die Mauern	wall (exterior, free-standing wall of stone)
 der Nachbarschaft, die Nachbarschaften	neighborhood
 der Palast, die Paläste	palace
 die Ebene, die Ebenen	plain (flatland)
