@@ -82,7 +82,7 @@ der Müll	trash
 die Mülltonne, die Mülltonnen	trash can
 der Staubsauger, die Staubsauger	vacuum cleaner
 die Vase, die Vasen	vase
-die Mauer, die Mauern	wall
+die Wand, die Wände	wall
 der Kleiderschrank, die Kleiderschränke	wardrobe (clothing cupboard)
 die Garderobe, die Garderoben	wardrobe (like French word)
 der Abfallkorb, die Abfallkörbe	wastebasket
@@ -102,7 +102,7 @@ die Wollmaus, die Wollmäuse	dust bunny
 der Haushalt, die Haushalte	household
 der Lüfter, die Lüfter	fan (electric, spinning fan)
 die Decke, die Decken	blanket (or ceiling, cover, floor)
-das Beutel, die Beutel	bag (little draw-string tote)
+der Beutel, die Beutel	bag (little draw-string tote)
 der Sack, die Säcke	sack
 die Tüte, die Tüten	tote bag (including boxy paper shopping bags)
 der Korb, die Körbe	basket
