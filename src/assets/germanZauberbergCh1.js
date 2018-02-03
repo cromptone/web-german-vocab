@@ -8,7 +8,7 @@ die Reise, die Reisen	trip, journey
 Gute Reise!	Have a good trip!
 die Weite, die Weiten	width, capaciousness
 das Verhältnis, die Verhältnisse	proportion, relationship, ratio
-der Aufenthalt, -e	stay, stopover, residence
+der Aufenthalt, die Aufenthalte	stay, stopover, residence
 eigentlich	actually, virtual
 mehr als genug	more than adequate
 das Mehr	excess
@@ -69,7 +69,7 @@ wenig	little, scant
 wenig entwickelte Länder	less developed countries
 die Gegend, die Gegenden	area, neighborhood
 in dieser Gegend	hereabouts
-der Blick, -e	view, sight, gaze, vista
+der Blick, die Blicke	view, sight, gaze, vista
 auf den ersten Blick	at first glance
 der Augenblick, die Augenblicke	moment, instant, jiffy
 offenbar	obvious, apparent
@@ -145,9 +145,8 @@ zärtlich	tender, affectionate, caressing
 der Kragen	collar, shroud, yoke
 weiten	to expand
 gearbeitet	wrought
-die Seide, -n	silk
+die Seide	silk
 aus Seide	silken
-der Zieher, -	drawer, snag
 der Überzieher, die Überzieher	topcoat (or clothing you put over your clothes while mixing drugs in a pharmacy or in the NICU)
 neben	beside, alongside
 broschiert	paper-back, stitched
@@ -262,7 +261,7 @@ Ich habe meine Autoschlüssel vergessen	I forgot my car keys
 Ich hab's vergessen	It slipped my mind
 lösen	to free, to break, to loosen
 etw. (akk) lösen	to solve something, to resolve something
-die Beziehung, -en	relationship, tie
+die Beziehung, die Beziehungen	relationship, tie
 die Beziehungen	dealings
 in dieser Beziehung	in this respect
 in Beziehung zu	in relation to, in respect to
