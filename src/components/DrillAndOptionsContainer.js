@@ -2,6 +2,7 @@ import React from 'react';
 import SetupOptionsContainer from './SetupOptionsContainer';
 import DrillContainer from './DrillContainer';
 import { animals } from '../assets/germanAnimals';
+import { bike } from '../assets/germanBike';
 import { domestic } from '../assets/germanDomesticItems';
 import { food } from '../assets/germanFood';
 import { geography } from '../assets/germanGeography';
@@ -120,7 +121,8 @@ const vocabListOptions = [
   {  text: 'Colors', id: 'germanColor'},
   {  text: 'Grab-bag!', id: 'germanGrabbag' },
   {  text: 'Der Zauberberg (chapter 1)', id: 'germanZauberbergCh1' },
-  {  text: 'Infinitives', id: 'germanInfinitives'}
+  {  text: 'Infinitives', id: 'germanInfinitives'},
+  {  text:  'Bike terminology', id: 'germanBike'}
  ];
 
 const rawVocabListById = {
@@ -153,7 +155,8 @@ const rawVocabListById = {
   'germanColor': color,
   'germanGrabbag': grabbag,
   'germanZauberbergCh1': zauber1,
-  'germanInfinitives': infinitives
+  'germanInfinitives': infinitives,
+  'germanBike': bike
  }
 
 const drillTypeOptions = [
