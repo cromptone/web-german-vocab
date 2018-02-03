@@ -34,7 +34,7 @@ export default class Button extends React.Component {
       marginBottom: 10,
       backgroundColor: '#a2a2a2',
       color: '#121224',
-      fontSize: 16,
+      fontSize: 12,
     };
 
     if (this.props.sizeClass === 'big') {

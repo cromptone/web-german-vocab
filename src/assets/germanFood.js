@@ -69,7 +69,7 @@ die Zitrone, die Zitronen	lemon
 die Limonade, die Limonaden	lemonade
 der Kopfsalat, die Kopfsalate	lettuce
 die Marmelade, die Marmeladen	jam
-der Safte, die Säfte	juice
+der Saft, die Säfte	juice
 der Schinken, die Schinken	ham
 die Frikadelle, die Frikadellen	frikadeller (a pan-fried meatball kind of like a hamburger patty)
 der Hamburger, die Hamburger	hamburger
@@ -81,14 +81,14 @@ der Teig, die Teige	dough (for bread etc.)
 das Ei, die Eier	egg
 die Aubergine, die Auberginen	eggplant
 das Mehl, die Mehle	flour
-die Nahrung, die Nahrungen 	food
+die Nahrung, die Nahrungen 	sustenance (i.e., food or drink consumed to survive)
 die Zuckerwatte, die Zuckerwatten	cotton candy
 die Krabbe, die Krabben	crab
 die Sahne	cream (not “der Rahm”)
 der Rahm	cream (not “die Sahne”)
 die Gurke, die Gurken	cucumber
 die Salzgurke, die Salzgurken	pickle
-der Mais, die Maise (and +n in dativ)	corn
+der Mais, die Maise	corn (and +n in dativ)
 die Frucht, die Früchte	fruit (including metaphorical fruit)
 das Obst	fruit (not Frucht)
 der Brokkoli	broccoli
