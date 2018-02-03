@@ -7,6 +7,8 @@ der Abgleich, die Abgleiche	comparison (as in checking to see if records align c
 der Vergleich, die Vergleiche	comparison (as in making an analogy)
 das Vertrauen	confidence
 das Verbrechen, die Verbrechen	crime
+die Meinung, die Meinungen	opinion, view, belief, idea
+die Meinungsfreiheit, die Meinungsfreiheiten	freedom of opinion
 die Krise, die Krisen	crisis
 die Dunkelheit, die Dunkelheiten	darkness
 die Entwicklung, die Entwicklungen	development (evolution, change in behavior, progress)

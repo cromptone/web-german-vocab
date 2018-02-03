@@ -89,4 +89,6 @@ der Installateurin, die Installateurinnen	plumber (female)
 der Feind, die Feinde	enemy (male)
 die Feindin, die Feindinnen	enemy (female)
 die Putzfrau, die Putzfrauen	cleaning woman
-der Kurier, die Kuriere	courier`;
+der Kurier, die Kuriere	courier
+der Maler, die Maler	painter (male)
+die Malerin, die Malerinnen	painter (female)`;

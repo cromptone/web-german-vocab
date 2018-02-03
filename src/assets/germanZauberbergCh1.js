@@ -245,6 +245,7 @@ etwas bewirken	to cause, to effect, to procure (reflexive with akk)
 gewiss	certainly, of course, sure
 in gewisser Hinsicht	in a sense, in some respects, in a way
 ganz gewiss	sure enough
+ewig	forever
 die Wiese, die Wiesen	meadow, lawn, grassland
 übertreffen	to beat, to outperform, to outstrip, to outclass
 gleich	equal, identical, same, immediately

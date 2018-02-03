@@ -18,6 +18,8 @@ der Tennisschläger, die Tennisschläger	tennis racket
 der Fußball	soccer
 das Bogenschießen	archery
 die Pirsch	hunting (shooting)
+der Sieger, die Sieger	winner (male)
+die Siegerin, die Siegerinnen	winner (female)
 das Jagen	hunting (general, not necessarily shooting)
 das Fischen	fishing
 die Angelrute, die Angelruten	fishing rod

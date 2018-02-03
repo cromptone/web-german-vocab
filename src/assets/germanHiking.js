@@ -11,6 +11,7 @@ der See, die Seen	lake
 die Landkarte, die Landkarten	map
 das Ruder, die Ruder	oar
 das Paddel, die Paddel	paddle
+die Bergspitze, die Bergspitzen	mountaintop
 der Fluss, die Flüsse	river
 der Schlafsack, die Schlafsäcke	sleeping bag
 das Zelt, die Zelte	tent

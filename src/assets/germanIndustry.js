@@ -6,6 +6,10 @@ die Schaufel, die Schaufeln	shovel
 die Scheuche, die Scheuchen	scarecrow
 das Bergwerk, die Bergwerke	mine (underground)
 der Bergbau	mining
+der Mist	manure
+der Bauer, die Bauern	farmer (male)
+die Bäuerin, die Bäuerinnen	farmer (female)
+der Acker, die Äcker	field, land, acre
 der Dünger, die Dünger	manure
 der Stoff, die Stoffe	material
 der Boden, die Böden	ground (or soil, or floor)

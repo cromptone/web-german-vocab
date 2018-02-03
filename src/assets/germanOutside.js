@@ -21,7 +21,9 @@ der Nachbarschaft, die Nachbarschaften	neighborhood
 der Palast, die Paläste	palace
 die Ebene, die Ebenen	plain (flatland)
 der Teich, die Teiche	pond
+der Schnee	snow
 die Pfütze, die Pfützen	puddle
+der Tau	dew
 der Fluss, die Flüsse	river
 die Schule, die Schulen	school
 der Gehsteig, die Gehsteige	sidewalk

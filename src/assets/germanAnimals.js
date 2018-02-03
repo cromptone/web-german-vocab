@@ -11,6 +11,7 @@ so fleißig wie ein Biber	as busy as a beaver
 die Fledermaus, die Fledermäuse	bat
 der Schnabel, die Schnäbel	beak
 der Bär, die Bären	bear
+das Wildtier, die Wildtiere	wild animal
 der Biber, die Biber	beaver
 die Biene, die Bienen	bee
 der Käfer, die Käfer	beetle

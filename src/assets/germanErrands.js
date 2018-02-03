@@ -16,8 +16,10 @@ das Geld, die Gelder	money
 die Brieftasche, die Brieftaschen	wallet
 der Dollar, die Dollars	dollar
 die Hausarbeit, die Hausarbeiten	housework
+der Stau, die Staus	bottleneck, traffic jam, accumulation
 die Steuer, die Steuern	tax
 der Ausweis, die Ausweise	ID card
+die Zahlung, die Zahlungen	payment, allowance, defrayal
 die Versicherung, die Versicherungen	insurance (or guarantee)
 die Bezahlung, die Bezahlungen	payment
 die Besorgungen	errands

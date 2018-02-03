@@ -9,6 +9,7 @@ der Koriander, die Koriander	cilantro
 die Gelbwurz	tumeric
 das Curry	curry
 der Dill, die Dille	dill
+die Kastanie, die Kastanien	horse chestnut
 der Estragon	tarragon
 der Fenchel	fennel
 die Gewürznelke, die Gewürznelken (usually in plural)	clove

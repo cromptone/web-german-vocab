@@ -32,6 +32,7 @@ import { color } from '../assets/germanColor';
 import { grabbag } from '../assets/germanGrabbag';
 import { zauber1 } from '../assets/germanZauberbergCh1';
 import { infinitives } from '../assets/germanInfinitives';
+import { government } from '../assets/germanGovernment';
 
 
 export default class DrillAndOptionsContainer extends React.Component {
@@ -112,6 +113,7 @@ const vocabListOptions = [
   {  text: 'Clothing', id: 'germanClothing'},
   {  text: 'Astronomy', id: 'germanAstronomy'},
   {  text: 'Bathroom items', id: 'germanBathroom'},
+  {  text: 'Government and law', id: 'germanGovernment'},
   {  text: 'Language and literature', id: 'germanLiterature'},
   {  text: 'Math and science', id: 'germanMathScience'},
   {  text: 'Back to school', id: 'germanSchool'},
@@ -156,7 +158,8 @@ const rawVocabListById = {
   'germanGrabbag': grabbag,
   'germanZauberbergCh1': zauber1,
   'germanInfinitives': infinitives,
-  'germanBike': bike
+  'germanBike': bike,
+  'germanGovernment': government
  }
 
 const drillTypeOptions = [
