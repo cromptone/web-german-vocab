@@ -4,7 +4,7 @@ die Blindheit, die Blindheiten	blindness
 der Bruch, die Brüche	break (or fracture)
 die Prellung, die Prellungen	bruise
 der Krebs	cancer
-die Kontaktlinse, die Kontaktlinsen	contact lense
+die Kontaktlinse, die Kontaktlinsen	contact lens
 die Diät, die Diäten	diet
 die Übung, die Übungen	exercise
 der Furz, die Fürze	fart (vulgar)
@@ -38,7 +38,7 @@ der Bluthochdruck	hypertension (high blood pressure)
 der Diabetes	diabetes (like English)
 die Zuckerkrankheit, die Zuckerkrankheiten	diabetes (sugar sickness)
 das Insulin	insulin
-die Insulinpumpe, die Insulinpumpen	insulin pumpe
+die Insulinpumpe, die Insulinpumpen	insulin pump
 die Allergie, die Allergien	allergy
 die Medizin, die Medizinen	medicine
 das Arzneimittel	pharmaceutical product

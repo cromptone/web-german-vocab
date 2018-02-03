@@ -12,9 +12,9 @@ export default class DrillContainer extends React.Component {
     this.handleSeeAllAnswers = this.handleSeeAllAnswers.bind(this);
     this.handleRestart = this.handleRestart.bind(this);
     this.handleRestartWithMissed = this.handleRestartWithMissed.bind(this);
+    this.handleRemoveTwenty = this.handleRemoveTwenty.bind(this);
 
     const wordsToComplete = this.shuffleCopyOfArray(this.props.vocabList);
-    
     const prompt = (this.props.drillType === 'withPrompts') ? wordsToComplete[0][1] : 'Enter German word:';
     this.state = {
       wordsToComplete,
@@ -129,6 +129,14 @@ export default class DrillContainer extends React.Component {
     this.props.handleReturnToMenu();
   }
 
+  handleRemoveTwenty() {
+    const wordList = this.state.wordsToComplete.concat(this.state.wordsAlreadyCompleted);
+    if (wordList.length > 25) {
+      this.restart(wordList.slice(20));
+    }
+    console.log("hit");
+  }
+
   shuffleCopyOfArray(originalArray) {
     const array = originalArray.slice();
     for (let indexOne = array.length - 1; indexOne > 0; indexOne--) {
@@ -143,13 +151,16 @@ export default class DrillContainer extends React.Component {
       <div>
         <div style={{ clear: 'both' }}>
           <div style={{ marginRight: '12.5%', clear: 'both', float: 'right', padding: 10 }}>
+            {(this.state.wordsToComplete.length + this.state.wordsAlreadyCompleted.length) > 25 &&
+              <Button id="removeTwenty" clickHandler={this.handleRemoveTwenty} text="Remove 20 words" />
+            }
             {this.state.wordsToComplete.length > 0 &&
-              <Button id="showAnswers" clickHandler={this.handleSeeAllAnswers} text="See all answers" />
+              <Button id="showAnswers" clickHandler={this.handleSeeAllAnswers} text="See answers" />
             }
             {(this.state.incorrectWords.length > 0 || this.state.wordsToComplete.length > 0) &&
               <Button id="restartWithMissed" clickHandler={this.handleRestartWithMissed} text="Redo with missed words" autoRevertColorChange={true} />
             }  
-            <Button id="return" clickHandler={this.handleReturnToMenu} text="Return to menu" />
+            <Button id="return" clickHandler={this.handleReturnToMenu} text="Back to menu" />
             <Button id="restart" clickHandler={this.handleRestart} text="Restart" autoRevertColorChange={true} />
 
           </div>
