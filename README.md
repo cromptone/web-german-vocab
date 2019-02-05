@@ -8,7 +8,7 @@ _To use_
 
 * Run ``npm run start`` for dev
 
-Demo: https://youthful-wiles-d80533.netlify.com
+Demo: https://www.germanvocabularydrills.com
 _______________________________
 
 
