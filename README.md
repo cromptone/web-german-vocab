@@ -8,7 +8,7 @@ _To use_
 
 * Run ``npm run start`` for dev
 
-Demo: https://www.germanvocabularydrills.com
+Demo: https://www.vocabdrills.com
 _______________________________
 
 
